@@ -57,3 +57,6 @@ typings/
 # dotenv environment variables file
 .env
 
+# ADDED BY NATE
+# uncompressed images
+images/uncompressed
