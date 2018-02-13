@@ -1,0 +1,36 @@
+.row {
+    display: flex; 
+    flex-wrap: wrap; 
+    background-color: orangered; 
+}
+
+*[class^="col-"] {
+    flex: 0 0 100%; 
+    background-color: greenyellow; 
+}
+
+// Medium Breakpoint Columns
+.col-md {
+    @include respond-above(md) {
+        &--50 {
+            flex: 0 0 50%; 
+        }
+
+        &--25 {
+            flex: 0 0 25%; 
+        }
+    }
+}
+
+// Large Breakpoint Columns
+.col-lg {
+    @include respond-above(lg) {
+        &--50 {
+            flex: 0 0 50%; 
+        }
+
+        &--25 {
+            flex: 0 0 25%; 
+        }
+    }
+}
