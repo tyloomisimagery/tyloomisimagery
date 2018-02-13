@@ -1,12 +1,10 @@
 .row {
     display: flex; 
     flex-wrap: wrap; 
-    background-color: orangered; 
 }
 
 *[class^="col-"] {
     flex: 0 0 100%; 
-    background-color: greenyellow; 
 }
 
 // Medium Breakpoint Columns

@@ -32,9 +32,29 @@
     }
 }
 
+.p {
+    &--sm {
+        padding: $padding-sm; 
+    }
+}
+
 // Margins 
 .mb {
     &--lg {
         margin-bottom: 5rem; 
     }
+    &--xl {
+        margin-bottom: 10rem; 
+    }
+}
+
+.mt {
+    &--lg {
+        margin-top: 5rem; 
+    }
+}
+
+// Images
+.img-fluid {
+    height: 100%; 
 }

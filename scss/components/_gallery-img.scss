@@ -1,0 +1,78 @@
+.gallery-img {
+    color: $color-white; 
+    width: 100%;
+    overflow: hidden; 
+
+    &__img { 
+        position: relative;
+        top: 0; 
+        left: 0; 
+        color: inherit; 
+        display: block; 
+        padding-bottom: 50%;
+        width: 100%; 
+        background-repeat: no-repeat; 
+        background-position: center center; 
+        background-size: cover; 
+    }
+
+    // hovers
+    &__img:hover &__overlay::after {
+        opacity: 1; 
+    }
+    &__img:hover &__text {
+        &--lg {
+            transform: translate(3rem, -3rem); 
+        }
+        
+        &--sm {
+            transform: translate(1rem, -1rem); 
+        }
+    }
+
+    &__overlay {
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        bottom: 0; 
+        right: 0; 
+        z-index: 1;
+
+        // background-image: linear-gradient(to top right, rgba($color-black, 0.9) 10%, transparent 50%); 
+
+        transition: all $transition-medium; 
+        
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 0.3em;
+            background-image: linear-gradient(to top right, rgba($color-black, 1), transparent 50%); 
+            transition: opacity 0.5s ease-out;
+            z-index: 2;
+            opacity: 0;
+        }
+    }
+
+    &__text {
+        position: absolute; 
+        bottom: 0; 
+        left: 0; 
+        z-index: 10; 
+        transition: transform $transition-medium; 
+        
+        
+        &--lg {
+            font-size: 5rem; 
+            padding: 2rem; 
+        }
+        
+        &--sm {
+            font-size: 2rem; 
+            padding: 1rem; 
+        }
+    }
+}
