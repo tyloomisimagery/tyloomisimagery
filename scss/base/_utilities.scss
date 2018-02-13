@@ -1,0 +1,23 @@
+.container {
+    transition: padding $transition-medium; 
+    
+    @include respond-below(sm) {
+        padding: 0 1rem; 
+    }
+    @include respond-above(sm) {
+        padding: 0 1.5rem; 
+    }
+    @include respond-above(md) {
+        padding: 0 3rem; 
+    }
+    @include respond-above(lg) {
+        padding: 0 7rem; 
+    }
+    @include respond-above(xl) {
+        padding: 0 10rem; 
+    }
+}
+
+.bg-dark {
+    background-color: #000; 
+}
