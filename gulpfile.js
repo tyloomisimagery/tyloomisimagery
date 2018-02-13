@@ -17,7 +17,7 @@ var imageminJpgRecompress = require('imagemin-jpeg-recompress');
 // Paths
 var CSS_PATH = 'css'; 
 var SCSS_PATH = 'scss/**/*.scss'; 
-var IMAGES_UNCOMPRESSED_PATH = 'images/uncompressed'; 
+var IMAGES_UNCOMPRESSED_PATH = 'images/uncompressed/**/*.{png,jpeg,jpg,svg,gif}'; 
 var IMAGES_COMPRESSED_PATH = 'images/compressed'; 
 
 
