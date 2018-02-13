@@ -1,5 +1,6 @@
 // Colors
 $color-white: #fff; 
+$color-grey-light-1: #ddd; 
 
 // Responsive Breakpoints
 $bp-sm: 36em; // 576px
@@ -11,3 +12,9 @@ $bp-xl: 75em; // 1200px
 $transition-fast: 0.2s; 
 $transition-medium: 0.7s; 
 $transition-slow: 1.5s; 
+
+// Paddings
+$padding-sm: 1rem; 
+
+// Navbar
+$navbar-logo-height: 7rem; 

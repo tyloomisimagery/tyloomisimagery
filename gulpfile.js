@@ -19,6 +19,7 @@ var CSS_PATH = 'css';
 var SCSS_PATH = 'scss/**/*.scss'; 
 var IMAGES_UNCOMPRESSED_PATH = 'images/uncompressed/**/*.{png,jpeg,jpg,svg,gif}'; 
 var IMAGES_COMPRESSED_PATH = 'images/compressed'; 
+var FONTS_PATH = 'fonts'; 
 
 
 // === TASKS ===
@@ -49,6 +50,13 @@ gulp.task('images', function() {
         ]))
         .pipe(gulp.dest(IMAGES_COMPRESSED_PATH)); 
 });
+
+// Move Fonts Folder to fonts
+gulp.task('fonts', function(){
+    return gulp.src('node_modules/font-awesome/fonts/*')
+      .pipe(gulp.dest(FONTS_PATH));
+});
+  
 
 // Watch File Changes
 gulp.task('watch', function() {
