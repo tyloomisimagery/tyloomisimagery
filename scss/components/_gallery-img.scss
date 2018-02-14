@@ -14,6 +14,14 @@
         background-repeat: no-repeat; 
         background-position: center center; 
         background-size: cover; 
+
+        &--long {
+            padding-bottom: 100%; 
+        }
+        
+        &--medium {
+            padding-bottom: 80%; 
+        }
     }
 
     // hovers
@@ -50,10 +58,14 @@
             width: 100%;
             height: 100%;
             border-radius: 0.3em;
-            background-image: linear-gradient(to top right, rgba($color-black, 1), transparent 50%); 
+            background-image: linear-gradient(to top right, rgba($color-black, 1), transparent 55%); 
             transition: opacity 0.5s ease-out;
             z-index: 2;
             opacity: 0;
+            
+            @include respond-below(lg) {
+                opacity: 1; 
+            }
         }
     }
 
@@ -63,6 +75,18 @@
         left: 0; 
         z-index: 10; 
         transition: transform $transition-medium; 
+        font-family: $font-heading;
+        letter-spacing: 2px;
+
+        @include respond-below(lg) {
+            &--lg {
+                transform: translate(3rem, -3rem); 
+            }
+            
+            &--sm {
+                transform: translate(1rem, -1rem); 
+            }
+        }
         
         
         &--lg {

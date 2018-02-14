@@ -3,6 +3,10 @@
     flex-wrap: wrap; 
 }
 
+.align-item-center {
+    align-items: center; 
+}
+
 *[class^="col-"] {
     flex: 0 0 100%; 
 }

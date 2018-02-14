@@ -19,6 +19,28 @@
     }
 }
 
+.container-adjusted {
+    &--sm {
+        transition: padding $transition-medium; 
+    
+        @include respond-below(sm) {
+            padding: 0; 
+        }
+        @include respond-above(sm) {
+            padding: 0 .5rem; 
+        }
+        @include respond-above(md) {
+            padding: 0 2rem; 
+        }
+        @include respond-above(lg) {
+            padding: 0 6rem; 
+        }
+        @include respond-above(xl) {
+            padding: 0 9rem; 
+        }  
+    }
+}
+
 // Backgrounds
 .bg-dark {
     background-color: #000; 
@@ -30,6 +52,37 @@
         padding-top: $padding-sm; 
         padding-bottom: $padding-sm; 
     }
+}
+
+.pb {
+    &--sm {
+        padding-bottom: $padding-sm; 
+    }
+}
+
+.pt {
+    &--sm {
+        padding-top: $padding-sm; 
+    }
+}
+
+.pr {
+    &--sm {
+        padding-right: $padding-sm; 
+    }   
+}
+
+.pl {
+    &--sm {
+        padding-left: $padding-sm; 
+    }   
+}
+
+.px {
+    &--sm {
+        padding-right: $padding-sm; 
+        padding-left: $padding-sm; 
+    }   
 }
 
 .p {
@@ -45,6 +98,9 @@
     }
     &--xl {
         margin-bottom: 10rem; 
+    }
+    &--huge {
+        margin-bottom: 20rem;         
     }
 }
 
