@@ -1,0 +1,42 @@
+.footer {
+    color: $color-white;
+    background-color: $color-black; 
+    padding-top: $padding-md; 
+    padding-bottom: $padding-md; 
+
+    &__container {
+        display: flex; 
+        flex-wrap: nowrap; 
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__contact {
+        line-height: 3rem; 
+        font-size: 1.4rem; 
+        letter-spacing: 1px;       
+    }
+
+    &__contact-email, &__contact-phone {
+        color: inherit;
+        text-decoration: none;
+        display: block; 
+        transition: all $transition-fast;
+
+        &:hover {
+            opacity: 0.5; 
+        }
+    }
+
+
+    &__contact-title {
+        display: inline-block;
+        font-size: 2.5rem; 
+        text-transform: uppercase; 
+        font-family: $font-heading;
+        letter-spacing: .5rem;
+        margin-bottom: $padding-sm;
+        padding-bottom: .5rem;
+        border-bottom: 1px solid $color-white;
+    }
+}
