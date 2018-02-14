@@ -9,6 +9,10 @@
         flex-wrap: nowrap; 
         justify-content: space-between;
         align-items: center;
+
+        @include respond-below(sm) {
+            align-items: flex-start;            
+        }
     }
 
     &__contact {
