@@ -27,12 +27,10 @@ var FONTS_PATH = 'fonts';
 // SCSS
 gulp.task('styles', function() {
     return gulp.src('scss/main.scss')
-        .pipe(sourcemaps.init())
         .pipe(autoprefixer())
         .pipe(sass({
             outputStyle: 'compressed'
         }))
-        .pipe(sourcemaps.write())
         .pipe(gulp.dest(CSS_PATH))
         .pipe(browserSync.stream());         
 });
