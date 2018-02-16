@@ -10,12 +10,13 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
+    <div class="container">
+
+        <header class="header">
             <nav class="navbar py--sm">
                 <ul class="navbar__nav">
                     <li class="navbar__item">
-                        <a href="#" class="navbar__link"><i class="fa fa-2x fa-bars"></i></a>
+                        <label class="navbar__btn" for="navbarToggler"><i class="fa fa-bars fa-2x"></i></label>
                     </li>
                     <li class="navbar__item">
                         <button class="navbar__btn"><i class="fa fa-2x fa-adjust"></i></button>
@@ -37,8 +38,27 @@
                     </li>
                 </ul>
             </nav>
-        </div>
-    </header>
+            <input class="navbar__checkbox" type="checkbox" id="navbarToggler">            
+            <nav class="side-menu">
+                <div class="mt--lg">
+                    <ul class="side-menu__nav">
+                        <li class="side-menu__item">
+                            <a href="#" class="side-menu__link">About</a>
+                        </li>
+                        <li class="side-menu__item">
+                            <a href="#" class="side-menu__link">PORTFOLIO</a>
+                        </li>
+                        <li class="side-menu__item">
+                            <a href="#" class="side-menu__link">RATES</a>
+                        </li>
+                        <li class="side-menu__item">
+                            <a href="#" class="side-menu__link">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
 
     <main>
         <section class="section-featured mb--xl">

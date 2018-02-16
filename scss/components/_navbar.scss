@@ -1,8 +1,19 @@
 .navbar {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 100;
+    height: 9rem;
+
+    background-color: $color-white;
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
     flex-wrap: wrap; 
+    border-bottom: 1px solid $color-grey-light-1;
+
+    @include container-margin(); 
 
     &__logo {
         display: block; 
@@ -31,6 +42,7 @@
     }
 
     &__item {
+        display: flex; 
         transition: opacity $transition-fast; 
         
         &:hover {
@@ -42,6 +54,7 @@
         background: none; 
         outline: none; 
         border: none; 
+        align-self: center; 
         
         &:hover {
             cursor: pointer; 
@@ -63,4 +76,27 @@
         }
     }
 
+    // Checkbox Hack functionality
+    &__checkbox {
+        display: none; 
+    }
+
+    &__checkbox:checked + * { // Selects whatever el is next to the checbox. Used * for extensibility
+        // To line with the container div
+        @include respond-below(sm) {
+            left: 1rem; 
+        }
+        @include respond-above(sm) {
+            left: 1.5rem; 
+        }
+        @include respond-above(md) {
+            left: 3rem; 
+        }
+        @include respond-above(lg) {
+            left: 7rem; 
+        }
+        @include respond-above(xl) {
+            left: 10rem; 
+        }
+    }
 }

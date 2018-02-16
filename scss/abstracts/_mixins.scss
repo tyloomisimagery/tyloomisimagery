@@ -44,3 +44,26 @@
         }
     }
 }
+
+@mixin container-margin {
+    @include respond-below(sm) {
+        margin-left:1rem; 
+        margin-right:1rem; 
+    }
+    @include respond-above(sm) {
+        margin-left:1.5rem; 
+        margin-right:1.5rem; 
+    }
+    @include respond-above(md) {
+        margin-left:3rem; 
+        margin-right:3rem; 
+    }
+    @include respond-above(lg) {
+        margin-left:7rem; 
+        margin-right:7rem; 
+    }
+    @include respond-above(xl) {
+        margin-left: 10rem; 
+        margin-right: 10rem; 
+    }
+}

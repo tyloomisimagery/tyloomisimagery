@@ -94,23 +94,55 @@
 // Margins 
 .mb {
     &--lg {
-        margin-bottom: 5rem; 
+        margin-bottom: $padding-lg; 
     }
     &--xl {
-        margin-bottom: 10rem; 
+        margin-bottom: $padding-xl; 
     }
     &--huge {
-        margin-bottom: 20rem;         
+        margin-bottom: $padding-huge;         
     }
 }
 
 .mt {
-    &--lg {
-        margin-top: 5rem; 
+    &--xs {
+        margin-top: $padding-xs; 
     }
+    &--sm {
+        margin-top: $padding-sm; 
+    }
+    &--lg {
+        margin-top: $padding-lg; 
+    }
+    &--huge {
+        margin-top: $padding-huge;         
+    } 
+}
+
+.ml {
+    &--sm {
+        margin-left: $padding-sm; 
+    }   
+    &--md {
+        margin-left: $padding-md; 
+    }  
+    &--lg {
+        margin-left: $padding-lg; 
+    }
+    &--xl {
+        margin-left: $padding-xl; 
+    }
+    &--huge {
+        margin-left: $padding-huge;         
+    } 
 }
 
 // Images
 .img-fluid {
     height: 100%; 
+}
+
+// Positioning
+.pos-relative {
+    position: relative;
 }

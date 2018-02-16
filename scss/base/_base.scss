@@ -19,3 +19,7 @@ body {
     box-sizing: border-box; 
     background-color: $color-white; 
 }
+
+main {
+    margin-top: $navbar-height; 
+}
