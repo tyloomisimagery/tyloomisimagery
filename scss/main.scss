@@ -1,13 +1,9 @@
-@import 'abstracts/variables'; 
-@import 'abstracts/mixins'; 
-@import 'layout/grid'; 
-@import 'base/utilities'; 
-@import 'base/base'; 
+$dark: hsla(180, 6, 12%, 1) !default;
 
-@import 'components/navbar'; 
-@import 'components/side-menu'; 
-@import 'components/header'; 
-@import 'components/gallery-img'; 
-@import 'components/footer'; 
 
 @import 'node_modules/font-awesome/scss/font-awesome'; 
+@import 'node_modules/bootstrap/scss/bootstrap'; 
+
+@import './base/base';
+@import './pages/homepage';
+@import './overrides/bootstrap';

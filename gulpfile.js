@@ -16,6 +16,7 @@ var imageminJpgRecompress = require('imagemin-jpeg-recompress');
 
 // Paths
 var CSS_PATH = 'css'; 
+var JS_PATH = 'js'; 
 var SCSS_PATH = 'scss/**/*.scss'; 
 var IMAGES_UNCOMPRESSED_PATH = 'images/uncompressed/**/*.{png,jpeg,jpg,svg,gif}'; 
 var IMAGES_COMPRESSED_PATH = 'images/compressed'; 
@@ -35,25 +36,18 @@ gulp.task('styles', function() {
         .pipe(browserSync.stream());         
 });
 
-// Images
-gulp.task('images', function() {
-    return gulp.src(IMAGES_UNCOMPRESSED_PATH)
-        .pipe(imagemin([
-            imagemin.gifsicle(), 
-            imagemin.jpegtran(), 
-            imagemin.optipng(), 
-            imagemin.svgo(), 
-            imageminPngquant(), 
-            imageminJpgRecompress()
-        ]))
-        .pipe(gulp.dest(IMAGES_COMPRESSED_PATH)); 
-});
-
 // Move Fonts Folder to fonts
 gulp.task('fonts', function(){
     return gulp.src('node_modules/font-awesome/fonts/*')
       .pipe(gulp.dest(FONTS_PATH));
 });
+
+// Move JS Files to src/js
+gulp.task('js', function(){
+    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js','node_modules/jquery/dist/jquery.min.js','node_modules/popper.js/dist/umd/popper.min.js'])
+      .pipe(gulp.dest(JS_PATH))
+      .pipe(browserSync.stream());
+  });
   
 
 // Watch File Changes
@@ -66,4 +60,4 @@ gulp.task('watch', function() {
     gulp.watch('*.html').on('change', browserSync.reload); 
 });
 
-gulp.task('default', ['styles', 'images', 'watch']); 
+gulp.task('default', ['styles', 'js', 'watch']); 

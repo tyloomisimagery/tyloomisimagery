@@ -1,0 +1,15 @@
+.active {
+    // border-bottom: 2px solid $primary;
+}
+
+.carousel-indicators li {
+    background-color: hsla(0, 0, 0, .5);
+    border: 2px solid #FFF;
+    border-radius: 18px;
+    height: 8px;
+    width: 8px;
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
