@@ -1,5 +1,30 @@
+@font-face {
+    font-family: 'sailors';
+    src: url('../../fonts/sailors_condensed-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../../fonts/sailors_condensed-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../fonts/fontawesome-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../fonts/sailors_condensed-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../../fonts/sailors_condensed-webfont.svg#sailors') format('svg'); /* Legacy iOS */
+  }
+
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'sailors';
     box-sizing: border-box; 
     background-color: $light 
+}
+
+.image-with-title {
+    position: relative;
+
+    &__title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(0turn, $dark, 60%, transparent);
+        margin-bottom: 0;
+        color: $light;
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
 }

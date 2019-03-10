@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
-    <title>Ty Loomis Imagery</title>
+    <title>About</title>
 
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
 </head>
 <body>
     <div class="logo-loader bg-light p-5">
@@ -16,7 +17,7 @@
         <div class="loader"></div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="#">
             <img class="img-fluid ns-navbar-brand" src="./images/logo/white/loomis2.png" alt="Ty Loomis Imagery logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,11 +26,11 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
             <li class="nav-item">
-              <a id="header-about" class="nav-link" href="about.html">Meet Ty</a>
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a id="header-about" class="nav-link" href="about.html">Meet Ty<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a id="header-portfolio" class="nav-link" href="portfolio.html">Portfolio</a>
@@ -45,49 +46,24 @@
     </nav>
 
     <main>
-        <!-- Carousel -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol id="main-carousel-indicators" class="carousel-indicators">
-                
-            </ol>
-            <div id="main-carousel" class="carousel-inner">
-                
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-        <div class="container bg-light">
-            <!-- Banner -->
-            <div class="row justify-content-center">
-                <div class="col-9 col-md-7 col-lg-5 my-3">
-                    <img src="./images/logo/black/loomis3.png" alt="Ty Loomis Imagery banner logo" class="img-fluid">
+        <div class="container">
+            <div class="row">
+                <!-- Image 1 -->
+                <div class="col-12">
+                    <img id="about-image-1" class="img-fluid" src="" alt="">
                 </div>
-            </div>
-            <div class="row mt-5 pt-5 mb-3">
-                <div class="col-8 d-flex">
-                    <a id="link-1" class="mr-3 main-link" href="#">Link 1</a>
-                    <a id="link-2" class="main-link" href="#">Link 2</a>
+                <!-- Text -->
+                <div class="col-12 py-5">
+                    <h1 id="about-header-text">Some Text</h1>
+                    <p id="about-p-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates cupiditate dolores qui distinctio eveniet sint maiores similique quod! Veritatis sequi nemo officia unde numquam.</p>
                 </div>
-                <div class="col-4 d-flex justify-content-end">
-                    <a id="social-email" class="mr-2" href="#">
-                        <i class="fa fa-2x fa-envelope-o text-dark"></i>
-                    </a>
-                    <a id="social-instagram" class="mr-2" href="#">
-                        <i class="fa fa-2x fa-instagram text-dark"></i>
-                    </a>
-                    <a id="social-facebook" href="#">
-                        <i class="fa fa-2x fa-facebook text-dark"></i>
-                    </a>
+                <!-- Image 2 -->
+                <div class="col-12 pb-5">
+                    <img id="about-image-2" src="" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
-        
+
         <footer class="mt-5">
             <div class="text-light py-3">
                 <div class="container">
@@ -107,5 +83,5 @@
 <script src="./js/popper.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 <!-- <script src="./js/axios.min.js"></script> -->
-<script src="./js/homepage.js"></script>
+<script src="./js/about.js"></script>
 </html>
