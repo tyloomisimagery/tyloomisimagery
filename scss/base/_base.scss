@@ -9,9 +9,13 @@
 
 
 body {
-    font-family: 'sailors';
+    font-family: 'Quicksand', sans-serif;
     box-sizing: border-box; 
     background-color: $light 
+}
+
+h1, h2, h3, .navbar > a {
+    font-family: 'sailors';
 }
 
 .image-with-title {
