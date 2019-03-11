@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Pricing</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+</head>
+<body>
+    <div class="logo-loader bg-light p-5">
+        <img src="./images/logo/black/loomis1.png" alt="logo" class="img-fluid loader-img">
+        <div class="pt-5 lds-dual-ring"></div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img class="img-fluid ns-navbar-brand" src="./images/logo/white/loomis2.png" alt="Ty Loomis Imagery logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a id="header-about" class="nav-link" href="about.html">Meet Ty</a>
+            </li>
+            <li class="nav-item">
+              <a id="header-portfolio" class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item active">
+              <a id="header-pricing" class="nav-link" href="pricing.html">Pricing<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a id="header-contact" class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container mt-3">
+            <div class="row justify-content-center">
+                <!-- Mission Statement -->
+                <div class="col-12">
+                    <h1 id="mission-statement-header">Mission Statement</h1>
+                    <p id="mission-statement-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae soluta ratione qui aut ipsam? Quibusdam!</p>
+                </div>
+                <!-- Packages -->
+                <div class="col-10 py-5">
+                    <div class="card mb-4 bg-dark text-light">
+                        <div class="card-body">
+                            <h5 id="package-1-title" class="card-title">Package 1</h5>
+                            <h6 id="package-1-subtitle" class="card-subtitle mb-2 text-muted font-italic">$60/photo, two frames, random text</h6>
+                            <p id="package-1-text" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 id="package-2-title" class="card-title">Package 2</h5>
+                            <h6 id="package-2-subtitle" class="card-subtitle mb-2 text-muted font-italic">$60/photo, two frames, random text</h6>
+                            <p id="package-2-text" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body">
+                            <h5 id="pacakge-3-title" class="card-title">Package 3</h5>
+                            <h6 id="package-3-subtitle" class="card-subtitle mb-2 font-italic">$60/photo, two frames, random text</h6>
+                            <p id="package-3-text" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Other -->
+                <div class="col-12">
+                    <h1 id="other-pricing-header">Other</h1>
+                    <p id="other-pricing-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, ratione iste molestiae omnis animi voluptatibus!</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-5">
+            <div class="text-light py-3">
+                <div class="container">
+                    <div class="contact-info">
+                        <a id="email" href="mailto:tyloomis@gmail.com">email@gmail.com</a>
+                    </div>
+                    <div class="copyright">
+                        <i class="fa fa-copyright"></i> <span id="copyright-text"></span>, <span id="copyright-date"></span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/pricing.js"></script>
+</html>
