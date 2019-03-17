@@ -18,6 +18,10 @@ h1, h2, h3, .navbar > a {
     font-family: 'sailors';
 }
 
+main {
+    min-height: 100vh;
+}
+
 .image-with-title {
     position: relative;
 

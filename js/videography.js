@@ -34,25 +34,8 @@ function updatePageWithData(sheetData) {
     $('#header-pricing').text(sheetData.C4);
     $('#header-contact').text(sheetData.D4);
 
-    // Wedding
-    $('#portfolio-wedding-image').attr('src', sheetData.A41);
-    $('#portfolio-wedding-text').text(sheetData.B41);
-
-    // Portrait 
-    $('#portfolio-portrait-image').attr('src', sheetData.A45);
-    $('#portfolio-portrait-text').text(sheetData.B45);
-
-    // Lifestyle
-    $('#portfolio-lifestyle-image').attr('src', sheetData.A49);
-    $('#portfolio-lifestyle-text').text(sheetData.B49);
-
-    // Videography
-    if(sheetData.C41 === 'X') {
-        $('#video-col').remove();
-    }
-    $('#portfolio-video-image').attr('src', sheetData.C41);
-    $('#portfolio-video-text').text(sheetData.D41);
-
+    // Images
+    addGallery(sheetData);
 
     // Footer
     $('#email').text(sheetData.A8);
@@ -63,3 +46,16 @@ function updatePageWithData(sheetData) {
     $('.logo-loader').fadeOut(1000);
 }
 
+function addGallery(sheetData) {
+    const keys = Object.keys(sheetData).filter(key => key.includes('87'));
+    keys.forEach((cell, index) => {
+        const html = `
+        <div class="col-md-6 mb-2">
+            <div class=" embed-responsive embed-responsive-16by9">
+                ${sheetData[cell]}
+            </div>
+        </div>
+        `;
+        $('#gallery-wrapper').append(html);
+    })
+}
