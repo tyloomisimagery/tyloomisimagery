@@ -40,7 +40,8 @@ function updatePageWithData(sheetData) {
 
     // Text 
     $('#about-header-text').text(sheetData.A32);
-    $('#about-p-text').text(sheetData.B32);
+    $('#about-text-bold').text(sheetData.B32);
+    $('#about-p-text').text(sheetData.C32);
 
     // Footer
     $('#email').text(sheetData.A8);

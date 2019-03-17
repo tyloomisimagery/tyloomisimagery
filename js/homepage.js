@@ -39,7 +39,9 @@ function updatePageWithData(sheetData) {
 
     // Links 
     $('#link-1').text(sheetData.A23);
+    $('#link-1').attr('href', sheetData.C23);
     $('#link-2').text(sheetData.B23);
+    $('#link-2').attr('href', sheetData.D23);
 
     // Social
     $('#social-email').attr('href', `mailto:${sheetData.A8}`);
