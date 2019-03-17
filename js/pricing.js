@@ -47,7 +47,7 @@ function updatePageWithData(sheetData) {
     $('#package-2-title').text(sheetData.A60);
     $('#package-2-subtitle').text(sheetData.B60);
     // $('#package-2-text').text(sheetData.C60);
-    parseListItems(sheetData.C58, '#package-2-text');
+    parseListItems(sheetData.C60, '#package-2-text');
 
     $('#package-3-title').text(sheetData.A62);
     $('#package-3-subtitle').text(sheetData.B62);
