@@ -77,7 +77,7 @@ function parseListItems(text, selector, color) {
 }
 
 function addListItem(selector, text, color) {
-    console.log(text);
-    const listItem = `<li><i class="fa-li fa fa-check text-${color}"></i>${text}</li>`;
+    const icon = color !== 'pearl' ? 'fa-check' : 'fa-plus';
+    const listItem = `<li><i class="fa-li fa ${icon} text-${color}"></i>${text}</li>`;
     $(`${selector} ul`).append(listItem);
 }
