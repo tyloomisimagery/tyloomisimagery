@@ -36,3 +36,35 @@ main {
         font-weight: 400;
     }
 }
+
+.bg-gold {
+    background: linear-gradient(135deg, #e8cca7 0%,#cd9e6f 100%);
+}
+
+.text-gold {
+    color: #cd9e6f;
+}
+
+.bg-pearl {
+    background: linear-gradient(135deg, #cac1ba 0%,#9b8e85 100%);
+}
+
+.text-pearl {
+    color: #9b8e85;
+}
+
+.bg-platinum {
+    background:linear-gradient(135deg, #46464b 0%,#212125 100%);
+}
+
+.text-platinum {
+    color: #212125;
+}
+
+.bg-silver {
+    background: linear-gradient(135deg, #d1d5db 0%,#a5abb5 100%);
+}
+
+.text-silver {
+    color: #a5abb5;
+}

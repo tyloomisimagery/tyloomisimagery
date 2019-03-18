@@ -42,22 +42,22 @@ function updatePageWithData(sheetData) {
     $('#package-1-title').text(sheetData.A58);
     $('#package-1-subtitle').text(sheetData.B58);
     // $('#package-1-text').text(sheetData.C58);
-    parseListItems(sheetData.C58, '#package-1-text');
+    parseListItems(sheetData.C58, '#package-1-text', 'silver');
 
     $('#package-2-title').text(sheetData.A60);
     $('#package-2-subtitle').text(sheetData.B60);
     // $('#package-2-text').text(sheetData.C60);
-    parseListItems(sheetData.C60, '#package-2-text');
+    parseListItems(sheetData.C60, '#package-2-text', 'gold');
 
     $('#package-3-title').text(sheetData.A62);
     $('#package-3-subtitle').text(sheetData.B62);
     // $('#package-3-text').text(sheetData.C62);
-    parseListItems(sheetData.C62, '#package-3-text');
+    parseListItems(sheetData.C62, '#package-3-text', 'platinum');
 
     $('#package-4-title').text(sheetData.A64);
     $('#package-4-subtitle').text(sheetData.B64);
     // $('#package-4-text').text(sheetData.C64);
-    parseListItems(sheetData.C64, '#package-4-text');
+    parseListItems(sheetData.C64, '#package-4-text', 'pearl');
 
     // Other
     $('#other-pricing-header').text(sheetData.A67);
@@ -72,12 +72,12 @@ function updatePageWithData(sheetData) {
     $('.logo-loader').fadeOut(1000);
 }
 
-function parseListItems(text, selector) {
-    text.split('\n- ').forEach((item, index) => addListItem(selector, !index ? item.replace('- ', '') : item));
+function parseListItems(text, selector, color) {
+    text.split('\n- ').forEach((item, index) => addListItem(selector, !index ? item.replace('- ', '') : item, color));
 }
 
-function addListItem(selector, text) {
+function addListItem(selector, text, color) {
     console.log(text);
-    const listItem = `<li>${text}</li>`;
+    const listItem = `<li><i class="fa-li fa fa-check text-${color}"></i>${text}</li>`;
     $(`${selector} ul`).append(listItem);
 }
