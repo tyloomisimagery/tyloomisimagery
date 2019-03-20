@@ -36,6 +36,7 @@ function updatePageWithData(sheetData) {
 
     // Images
     addGallery(sheetData);
+    $('#portfolio-sub-header').text(sheetData.B41);
 
     // Footer
     $('#email').text(sheetData.A8);
