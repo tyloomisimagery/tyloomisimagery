@@ -37,21 +37,25 @@ function updatePageWithData(sheetData) {
     // Wedding
     $('#portfolio-wedding-image').attr('src', sheetData.A41);
     $('#portfolio-wedding-text').text(sheetData.B41);
+    $('#wedding-col').addClass(`order-${sheetData.C41}`);
 
     // Portrait 
-    $('#portfolio-portrait-image').attr('src', sheetData.A45);
-    $('#portfolio-portrait-text').text(sheetData.B45);
+    $('#portfolio-portrait-image').attr('src', sheetData.A49);
+    $('#portfolio-portrait-text').text(sheetData.B49);
+    $('#portrait-col').addClass(`order-${sheetData.C49}`);
 
     // Lifestyle
-    $('#portfolio-lifestyle-image').attr('src', sheetData.A49);
-    $('#portfolio-lifestyle-text').text(sheetData.B49);
+    $('#portfolio-lifestyle-image').attr('src', sheetData.A45);
+    $('#portfolio-lifestyle-text').text(sheetData.B45);
+    $('#lifestyle-col').addClass(`order-${sheetData.C45}`);
 
     // Videography
-    if(sheetData.C41 === 'X') {
+    if(sheetData.D41 === 'X') {
         $('#video-col').remove();
     }
-    $('#portfolio-video-image').attr('src', sheetData.C41);
-    $('#portfolio-video-text').text(sheetData.D41);
+    $('#portfolio-video-image').attr('src', sheetData.D41);
+    $('#portfolio-video-text').text(sheetData.E41);
+    $('#video-col').addClass(`order-${sheetData.F41}`);
 
 
     // Footer

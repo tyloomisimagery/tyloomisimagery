@@ -47,7 +47,7 @@ function updatePageWithData(sheetData) {
 }
 
 function addGallery(sheetData) {
-    const keys = Object.keys(sheetData).filter(key => key.includes('82'));
+    const keys = Object.keys(sheetData).filter(key => key.includes('77'));
     keys.forEach((cell, index) => {
         const html = `
         <div class="col-md-6 mb-2">
