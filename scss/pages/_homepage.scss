@@ -74,6 +74,18 @@ footer {
     border: 0;
 }
 
+.carousel-container {
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) and (max-width: 1199.98px) { 
+        width: 80vw;
+    }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        width: 70vw;
+    }
+}
+
 .copyright {
     font-size: 10px;
 }
