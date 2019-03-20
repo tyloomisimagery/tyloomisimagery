@@ -9,7 +9,7 @@ $(async () => {
         dataType:'json',
         success : function(result) {              
             const sheet = getSheet(result);
-            console.log(sheet);
+            // console.log(sheet);
             updatePageWithData(sheet);
         },
         error : function(request,error) {

@@ -9,7 +9,7 @@ $(async () => {
         dataType:'json',
         success : function(result) {              
             const sheet = getSheet(result);
-            console.log(sheet);
+            // console.log(sheet);
             updatePageWithData(sheet);
         },
         error : function(request,error) {
@@ -68,7 +68,7 @@ function addCarouselImages(sheetData) {
 }
 
 function generateCarouselImage(imgUrl, index) {
-    console.log(imgUrl);
+    // console.log(imgUrl);
     return `
     <div class="carousel-item ${!index ? 'active' : ''}">
     <img src="${imgUrl}" class="d-block w-100" alt="carousel image">
